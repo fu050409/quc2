@@ -1,0 +1,52 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<META name=description content="{{des}}">
+
+<link rel="shortcut icon" href="../static/favicon.ico"/>
+
+<head>
+	<title>公告</title>
+	<style type="text/css">  
+.para{ text-indent:2em;}  
+	</style>
+</head>
+
+<body bgcolor="#630808">
+	<script type="text/javascript">
+                var datelocalweek = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+                var datelocalnow = new Date();
+                var datelocalyear = datelocalnow.getFullYear();
+                var datelocalmonth = (datelocalmonth = "0" + (datelocalnow.getMonth() + 1)).substr(datelocalmonth.length - 2, 2);
+                var datelocalday = (datelocalday = "0" + datelocalnow.getDate()).substr(datelocalday.length - 2, 2);
+                var datelocalweekday = datelocalweek[datelocalnow.getDay()];
+                document.write("<!--<font color=#fff>今天是：--></font><font color=#fff style='font-size: 10pt'> " + datelocalyear + "年" + datelocalmonth + "月" + datelocalday + "日" + " " + datelocalweekday + "</font><br>");
+            </script>
+<td><div align="center">
+      <p><font color="#FFFFFF" style="font-size: 12pt">
+		<span style="font-weight: 600">大鹏一日同风起，扶摇直上九万里。假令风歇时下来，犹能簸却沧溟水。</span></font></p>
+      </div></td>
+    </tr>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+    <td><div align=center>
+      <p><font color="#FFFFFF" style="font-size: 15pt">
+		<span style="font-weight: 700">{{show}}</span></font></p>
+      </div></td>
+    </tr>
+    <td><div>
+      <p class=para><font color=#FFFFFF style=font-size: 13pt>
+		<span style=font-weight: 390>中国秦川联盟已宣布高谷，希望老盟员回归！</span></font></p>
+      </div></td>
+    </tr>
+    <td><div align="center">
+      <p><font color="#FFFFFF" style="font-size: 13pt">
+		<span style="font-weight: 700"></span></font></p>
+      </div></td>
+    </tr>
+</body>

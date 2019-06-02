@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<META name=description content="{{des}}">
+<link rel="shortcut icon" href="../static/favicon.ico" />
+
+<head>
+    <title>{{title}}</title>
+</head>
+
+<body style="background-image: url({% static 'star.jpg' %});background-size:100% 300%;" >
+    
+    
+    <td><div align="center">
+      <p><font color="#FFFFFF" style="font-size: 13pt">
+		<span style="font-weight: 700">{{tenet}}</span></font></p>
+      </div></td>
+    </tr>
+    <td><div align="center">
+      <p><font color="#FFFFFF" style="font-size: 50pt">
+		<span style="font-weight: 700">{{Welcome}}</span></font></p>
+      </div></td>
+    <div align="center"><a href="/admin/admin"><img src="../static/admin.gif" width="200" height="50" /></a></div>
+    </tr>
+    <td><div align="center">
+      <p><font color="#FFFFFF" style="font-size: 15pt">
+		<a target="_blank" href="admin/"><span style="font-weight: 700">{{admin}}</span></font></p></a>
+      </div></td>
+    </tr>
+
+</body>
